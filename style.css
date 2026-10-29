@@ -1,0 +1,226 @@
+
+/* CONFIGURACOES GERAIS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6fa;
+    color: #172640;
+    line-height: 1.5;
+}
+
+header,
+footer {
+    background: #101d35;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+header h1 {
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+main {
+    width: 90%;
+    max-width: 1000px;
+    margin: 25px auto;
+}
+
+.introducao {
+    margin-bottom: 20px;
+}
+
+.desafio,
+.biblioteca {
+    background: white;
+    border: 1px solid #dce2ec;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 18px;
+}
+
+h2 {
+    color: #101d35;
+    margin-bottom: 10px;
+}
+
+h3 {
+    margin: 15px 0 10px;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+input,
+textarea {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #b9c4d5;
+    border-radius: 5px;
+    font: inherit;
+}
+
+textarea {
+    min-height: 90px;
+}
+
+button {
+    background: #101d35;
+    color: white;
+    border: none;
+    padding: 10px 14px;
+    margin: 4px 3px 4px 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover,
+button.ativo {
+    background: #315b91;
+}
+
+button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+ul {
+    padding-left: 25px;
+}
+
+li {
+    margin: 8px 0;
+}
+
+li input {
+    display: inline-block;
+    width: auto;
+    margin-right: 8px;
+}
+
+li button {
+    margin-left: 10px;
+}
+
+.concluida span {
+    text-decoration: line-through;
+    color: #68758a;
+}
+
+.destaque-desafio {
+    background: #edf2fa;
+    padding: 12px;
+    border-radius: 5px;
+}
+
+.tema-alternativo {
+    background: #101d35;
+    color: white;
+}
+
+#painel-cor {
+    background: #eaf1ff;
+    color: #071426;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.filtros {
+    margin: 10px 0;
+}
+
+.grade-jogos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.jogo {
+    border: 1px solid #dce2ec;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.jogo-arte {
+    background: #101d35;
+    color: white;
+    padding: 20px;
+    min-height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+.jogo-icone {
+    font-size: 25px;
+}
+
+.jogo-tag {
+    font-size: 10px;
+}
+
+.jogo-coracao {
+    padding: 6px 10px;
+}
+
+.jogo-coracao.favorito {
+    background: #315b91;
+}
+
+.jogo-info {
+    padding: 12px;
+}
+
+.jogo-meta {
+    display: flex;
+    flex-direction: column;
+    color: #58677d;
+    font-size: 13px;
+    margin: 10px 0;
+}
+
+.sem-resultados,
+.colecao-vazia {
+    padding: 12px;
+    color: #58677d;
+}
+
+.colecao-item {
+    background: #edf2fa;
+    padding: 10px;
+    margin-top: 8px;
+    border-radius: 5px;
+}
+
+.colecao-item span {
+    margin-right: 10px;
+}
+
+footer {
+    margin-top: 30px;
+}
+
+@media (max-width: 650px) {
+    main {
+        width: 94%;
+    }
+
+    .grade-jogos {
+        grid-template-columns: 1fr;
+    }
+
+    header h1 {
+        font-size: 25px;
+    }
+}

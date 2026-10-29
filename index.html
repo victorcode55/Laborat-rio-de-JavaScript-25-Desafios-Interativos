@@ -1,0 +1,213 @@
+
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEVER LAND | Laboratório JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>NEVER LAND</h1>
+        <p>Laboratório de JavaScript</p>
+        <p>25 desafios de programação</p>
+    </header>
+
+    <main>
+        <section class="introducao">
+            <h2>Laboratório de desafios</h2>
+            <p>Explore as atividades e teste suas habilidades.</p>
+        </section>
+
+        <!-- ATIVIDADE 1 -->
+        <section class="desafio">
+            <h2>01. Alterar título</h2>
+            <p id="resultado-titulo">Bem-vindo ao NEVER LAND!</p>
+            <button id="btn-titulo">Ativar sistema</button>
+        </section>
+
+        <!-- ATIVIDADE 2 -->
+        <section class="desafio">
+            <h2>02. Contador interativo</h2>
+            <p id="valor-contador">0</p>
+            <button id="aumentar">Aumentar</button>
+            <button id="diminuir">Diminuir</button>
+            <button id="zerar-contador">Zerar</button>
+        </section>
+
+        <!-- ATIVIDADE 3 -->
+        <section class="desafio">
+            <h2>03. Alterar tema</h2>
+            <p class="destaque-desafio">Experimente mudar a aparência.</p>
+            <p id="resultado-tema">Tema claro ativado.</p>
+            <button id="btn-tema">Mudar tema</button>
+        </section>
+
+        <!-- ATIVIDADE 4 -->
+        <section class="desafio">
+            <h2>04. Par ou ímpar</h2>
+            <input type="number" id="numero-par" placeholder="Digite um número">
+            <button id="btn-par">Verificar</button>
+            <p id="resultado-par"></p>
+        </section>
+
+        <!-- ATIVIDADE 5 -->
+        <section class="desafio">
+            <h2>05. Mensagem personalizada</h2>
+            <input type="text" id="nome-usuario" placeholder="Seu nome">
+            <button id="btn-nome">Enviar</button>
+            <p id="resultado-nome"></p>
+        </section>
+
+        <!-- ATIVIDADE 6 -->
+        <section class="desafio">
+            <h2>06. Calculadora de soma</h2>
+            <input type="number" id="soma-a" placeholder="Primeiro número">
+            <input type="number" id="soma-b" placeholder="Segundo número">
+            <button id="btn-somar">Somar</button>
+            <p id="resultado-soma"></p>
+        </section>
+
+        <!-- ATIVIDADE 7 -->
+        <section class="desafio">
+            <h2>07. Contar caracteres</h2>
+            <input type="text" id="texto-caracteres" placeholder="Digite um texto">
+            <p>Quantidade: <span id="quantidade-caracteres">0</span></p>
+        </section>
+
+        <!-- ATIVIDADE 8 -->
+        <section class="desafio">
+            <h2>08. Número aleatório</h2>
+            <button id="btn-aleatorio">Sortear número</button>
+            <p id="resultado-aleatorio"></p>
+        </section>
+
+        <!-- ATIVIDADE 9 -->
+        <section class="desafio">
+            <h2>09. Faixa etária</h2>
+            <input type="number" id="idade-usuario" placeholder="Digite sua idade">
+            <button id="btn-idade">Verificar idade</button>
+            <p id="resultado-idade"></p>
+        </section>
+
+        <!-- ATIVIDADE 10 -->
+        <section class="desafio">
+            <h2>10. Texto em maiúsculas</h2>
+            <input type="text" id="texto-maiusculo" placeholder="Digite uma frase">
+            <button id="btn-maiusculo">Transformar</button>
+            <p id="resultado-maiusculo"></p>
+        </section>
+
+        <!-- ATIVIDADE 11 -->
+        <section class="desafio">
+            <h2>11. Lista de tarefas</h2>
+            <input type="text" id="nova-tarefa" placeholder="Nova tarefa">
+            <button id="btn-tarefa">Adicionar tarefa</button>
+            <ul id="lista-tarefas"></ul>
+        </section>
+
+        <!-- ATIVIDADE 12 -->
+        <section class="desafio">
+            <h2>12. Relógio digital</h2>
+            <p id="relogio">00:00:00</p>
+        </section>
+
+        <!-- ATIVIDADE 13 -->
+        <section class="desafio">
+            <h2>13. Comparar números</h2>
+            <input type="number" id="maior-a" placeholder="Primeiro número">
+            <input type="number" id="maior-b" placeholder="Segundo número">
+            <button id="btn-maior">Comparar</button>
+            <p id="resultado-maior"></p>
+        </section>
+
+        <!-- ATIVIDADE 14 -->
+        <section class="desafio">
+            <h2>14. Mensagem surpresa</h2>
+            <button id="btn-surpresa">Surpreenda-me</button>
+            <p id="resultado-surpresa"></p>
+        </section>
+
+        <!-- ATIVIDADE 15 -->
+        <section class="desafio">
+            <h2>15. Teste de senha</h2>
+            <input type="password" id="senha-teste" placeholder="Digite uma senha">
+            <button id="btn-senha">Verificar senha</button>
+            <p id="resultado-senha"></p>
+        </section>
+
+        <!-- ATIVIDADE 16 -->
+        <section class="desafio">
+            <h2>16. Tabuada</h2>
+            <input type="number" id="numero-tabuada" placeholder="Digite um número">
+            <button id="btn-tabuada">Gerar tabuada</button>
+            <div id="resultado-tabuada"></div>
+        </section>
+
+        <!-- ATIVIDADE 17 -->
+        <section class="desafio">
+            <h2>17. Mudar cor do painel</h2>
+            <div id="painel-cor">Cor atual: Azul claro</div>
+            <button id="btn-cor">Mudar cor</button>
+        </section>
+
+        <!-- ATIVIDADE 18 -->
+        <section class="desafio">
+            <h2>18. Inverter texto</h2>
+            <input type="text" id="texto-inverter" placeholder="Digite uma palavra ou frase">
+            <button id="btn-inverter">Inverter</button>
+            <p id="resultado-inverter"></p>
+        </section>
+
+        <!-- ATIVIDADE 19 -->
+        <section class="desafio">
+            <h2>19. Contagem regressiva</h2>
+            <p>A contagem começa em 10 segundos.</p>
+            <button id="btn-regressiva">Iniciar</button>
+            <p id="resultado-regressiva"></p>
+        </section>
+
+        <!-- ATIVIDADE 20 -->
+        <section class="desafio">
+            <h2>20. Bloco de notas</h2>
+            <textarea id="nota" placeholder="Escreva sua nota aqui"></textarea>
+            <button id="btn-nota">Salvar nota</button>
+            <p id="resultado-nota"></p>
+        </section>
+
+        <!-- ATIVIDADES 21 A 25 -->
+        <section class="biblioteca">
+            <h2>21–25. Biblioteca de jogos</h2>
+            <p>Pesquise jogos, marque favoritos e monte sua coleção.</p>
+
+            <p>Jogos encontrados: <span id="total-jogos">06</span></p>
+
+            <input type="text" id="busca-jogos" placeholder="Buscar jogos">
+
+            <div class="filtros">
+                <button class="filtro ativo" data-categoria="Todos">Todos</button>
+                <button class="filtro" data-categoria="Ação">Ação</button>
+                <button class="filtro" data-categoria="Aventura">Aventura</button>
+                <button class="filtro" data-categoria="RPG">RPG</button>
+                <button class="filtro" data-categoria="Corrida">Corrida</button>
+            </div>
+
+            <div id="grade-jogos" class="grade-jogos"></div>
+
+            <h3>Minha coleção</h3>
+            <button id="limpar-colecao">Limpar coleção</button>
+            <div id="colecao-lista"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>NEVER LAND | HTML, CSS e JavaScript</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
