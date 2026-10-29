@@ -1,213 +1,289 @@
-
-
-
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NEVER LAND | Laboratório JavaScript</title>
+    <title>NEVER LAND</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-
-    <header>
-        <h1>NEVER LAND</h1>
-        <p>Laboratório de JavaScript</p>
-        <p>25 desafios de programação</p>
+    <header class="cabecalho">
+        <a href="#" class="logo">NEVER<span>LAND</span></a>
+        <p>JS LAB · Laboratório de JavaScript</p>
+        <nav>
+            <a href="#etapa1">Etapa 01</a>
+            <a href="#etapa2">Etapa 02</a>
+            <a href="#etapa3">Etapa 03</a>
+            <a href="#etapa4">Etapa 04</a>
+            <a href="#etapa5">Etapa 05</a>
+        </nav>
     </header>
 
-    <main>
+    <main class="container">
         <section class="introducao">
-            <h2>Laboratório de desafios</h2>
-            <p>Explore as atividades e teste suas habilidades.</p>
+            <p class="etiqueta">PROJETO PESSOAL · 25 DESAFIOS</p>
+            <h1>Aprenda fazendo.</h1>
+            <p>Um laboratório interativo para praticar HTML, CSS e JavaScript.</p>
         </section>
 
-        <!-- ATIVIDADE 1 -->
-        <section class="desafio">
-            <h2>01. Alterar título</h2>
-            <p id="resultado-titulo">Bem-vindo ao NEVER LAND!</p>
-            <button id="btn-titulo">Ativar sistema</button>
-        </section>
-
-        <!-- ATIVIDADE 2 -->
-        <section class="desafio">
-            <h2>02. Contador interativo</h2>
-            <p id="valor-contador">0</p>
-            <button id="aumentar">Aumentar</button>
-            <button id="diminuir">Diminuir</button>
-            <button id="zerar-contador">Zerar</button>
-        </section>
-
-        <!-- ATIVIDADE 3 -->
-        <section class="desafio">
-            <h2>03. Alterar tema</h2>
-            <p class="destaque-desafio">Experimente mudar a aparência.</p>
-            <p id="resultado-tema">Tema claro ativado.</p>
-            <button id="btn-tema">Mudar tema</button>
-        </section>
-
-        <!-- ATIVIDADE 4 -->
-        <section class="desafio">
-            <h2>04. Par ou ímpar</h2>
-            <input type="number" id="numero-par" placeholder="Digite um número">
-            <button id="btn-par">Verificar</button>
-            <p id="resultado-par"></p>
-        </section>
-
-        <!-- ATIVIDADE 5 -->
-        <section class="desafio">
-            <h2>05. Mensagem personalizada</h2>
-            <input type="text" id="nome-usuario" placeholder="Seu nome">
-            <button id="btn-nome">Enviar</button>
-            <p id="resultado-nome"></p>
-        </section>
-
-        <!-- ATIVIDADE 6 -->
-        <section class="desafio">
-            <h2>06. Calculadora de soma</h2>
-            <input type="number" id="soma-a" placeholder="Primeiro número">
-            <input type="number" id="soma-b" placeholder="Segundo número">
-            <button id="btn-somar">Somar</button>
-            <p id="resultado-soma"></p>
-        </section>
-
-        <!-- ATIVIDADE 7 -->
-        <section class="desafio">
-            <h2>07. Contar caracteres</h2>
-            <input type="text" id="texto-caracteres" placeholder="Digite um texto">
-            <p>Quantidade: <span id="quantidade-caracteres">0</span></p>
-        </section>
-
-        <!-- ATIVIDADE 8 -->
-        <section class="desafio">
-            <h2>08. Número aleatório</h2>
-            <button id="btn-aleatorio">Sortear número</button>
-            <p id="resultado-aleatorio"></p>
-        </section>
-
-        <!-- ATIVIDADE 9 -->
-        <section class="desafio">
-            <h2>09. Faixa etária</h2>
-            <input type="number" id="idade-usuario" placeholder="Digite sua idade">
-            <button id="btn-idade">Verificar idade</button>
-            <p id="resultado-idade"></p>
-        </section>
-
-        <!-- ATIVIDADE 10 -->
-        <section class="desafio">
-            <h2>10. Texto em maiúsculas</h2>
-            <input type="text" id="texto-maiusculo" placeholder="Digite uma frase">
-            <button id="btn-maiusculo">Transformar</button>
-            <p id="resultado-maiusculo"></p>
-        </section>
-
-        <!-- ATIVIDADE 11 -->
-        <section class="desafio">
-            <h2>11. Lista de tarefas</h2>
-            <input type="text" id="nova-tarefa" placeholder="Nova tarefa">
-            <button id="btn-tarefa">Adicionar tarefa</button>
-            <ul id="lista-tarefas"></ul>
-        </section>
-
-        <!-- ATIVIDADE 12 -->
-        <section class="desafio">
-            <h2>12. Relógio digital</h2>
-            <p id="relogio">00:00:00</p>
-        </section>
-
-        <!-- ATIVIDADE 13 -->
-        <section class="desafio">
-            <h2>13. Comparar números</h2>
-            <input type="number" id="maior-a" placeholder="Primeiro número">
-            <input type="number" id="maior-b" placeholder="Segundo número">
-            <button id="btn-maior">Comparar</button>
-            <p id="resultado-maior"></p>
-        </section>
-
-        <!-- ATIVIDADE 14 -->
-        <section class="desafio">
-            <h2>14. Mensagem surpresa</h2>
-            <button id="btn-surpresa">Surpreenda-me</button>
-            <p id="resultado-surpresa"></p>
-        </section>
-
-        <!-- ATIVIDADE 15 -->
-        <section class="desafio">
-            <h2>15. Teste de senha</h2>
-            <input type="password" id="senha-teste" placeholder="Digite uma senha">
-            <button id="btn-senha">Verificar senha</button>
-            <p id="resultado-senha"></p>
-        </section>
-
-        <!-- ATIVIDADE 16 -->
-        <section class="desafio">
-            <h2>16. Tabuada</h2>
-            <input type="number" id="numero-tabuada" placeholder="Digite um número">
-            <button id="btn-tabuada">Gerar tabuada</button>
-            <div id="resultado-tabuada"></div>
-        </section>
-
-        <!-- ATIVIDADE 17 -->
-        <section class="desafio">
-            <h2>17. Mudar cor do painel</h2>
-            <div id="painel-cor">Cor atual: Azul claro</div>
-            <button id="btn-cor">Mudar cor</button>
-        </section>
-
-        <!-- ATIVIDADE 18 -->
-        <section class="desafio">
-            <h2>18. Inverter texto</h2>
-            <input type="text" id="texto-inverter" placeholder="Digite uma palavra ou frase">
-            <button id="btn-inverter">Inverter</button>
-            <p id="resultado-inverter"></p>
-        </section>
-
-        <!-- ATIVIDADE 19 -->
-        <section class="desafio">
-            <h2>19. Contagem regressiva</h2>
-            <p>A contagem começa em 10 segundos.</p>
-            <button id="btn-regressiva">Iniciar</button>
-            <p id="resultado-regressiva"></p>
-        </section>
-
-        <!-- ATIVIDADE 20 -->
-        <section class="desafio">
-            <h2>20. Bloco de notas</h2>
-            <textarea id="nota" placeholder="Escreva sua nota aqui"></textarea>
-            <button id="btn-nota">Salvar nota</button>
-            <p id="resultado-nota"></p>
-        </section>
-
-        <!-- ATIVIDADES 21 A 25 -->
-        <section class="biblioteca">
-            <h2>21–25. Biblioteca de jogos</h2>
-            <p>Pesquise jogos, marque favoritos e monte sua coleção.</p>
-
-            <p>Jogos encontrados: <span id="total-jogos">06</span></p>
-
-            <input type="text" id="busca-jogos" placeholder="Buscar jogos">
-
-            <div class="filtros">
-                <button class="filtro ativo" data-categoria="Todos">Todos</button>
-                <button class="filtro" data-categoria="Ação">Ação</button>
-                <button class="filtro" data-categoria="Aventura">Aventura</button>
-                <button class="filtro" data-categoria="RPG">RPG</button>
-                <button class="filtro" data-categoria="Corrida">Corrida</button>
+        <!-- ETAPA 01 -->
+        <section id="etapa1" class="etapa">
+            <div class="titulo-etapa">
+                <span>ETAPA 01</span>
+                <h2>Manipulação do DOM</h2>
+                <p>Altere textos, cores e elementos da página.</p>
             </div>
 
-            <div id="grade-jogos" class="grade-jogos"></div>
+            <div class="grade">
+                <article class="card">
+                    <span class="numero">01</span>
+                    <h3>Título que muda</h3>
+                    <h4 id="titulo-dinamico">Título original</h4>
+                    <p>O título é alterado automaticamente ao carregar a página.</p>
+                </article>
 
-            <h3>Minha coleção</h3>
-            <button id="limpar-colecao">Limpar coleção</button>
-            <div id="colecao-lista"></div>
+                <article class="card">
+                    <span class="numero">02</span>
+                    <h3>Botão que muda a mensagem</h3>
+                    <p id="mensagem">Esta é a mensagem original.</p>
+                    <button id="btn-mensagem">Mudar mensagem</button>
+                </article>
+
+                <article class="card">
+                    <span class="numero">03</span>
+                    <h3>Troca de cor</h3>
+                    <p id="aviso-cor">Este aviso pode mudar de cor.</p>
+                    <button id="btn-cor">Mudar cor</button>
+                </article>
+
+                <article class="card">
+                    <span class="numero">04</span>
+                    <h3>Esconder e mostrar</h3>
+                    <p id="informacao-extra" hidden>
+                        Esta é uma informação extra do NEVER LAND.
+                    </p>
+                    <button id="btn-informacao">Mostrar informação</button>
+                </article>
+
+                <article class="card">
+                    <span class="numero">05</span>
+                    <h3>Destaque com classe CSS</h3>
+                    <p id="texto-destaque">Clique para destacar este texto.</p>
+                    <button id="btn-destaque">Alternar destaque</button>
+                </article>
+            </div>
+        </section>
+
+        <!-- ETAPA 02 -->
+        <section id="etapa2" class="etapa">
+            <div class="titulo-etapa">
+                <span>ETAPA 02</span>
+                <h2>Interação com o usuário</h2>
+                <p>Use campos e botões para responder às ações do visitante.</p>
+            </div>
+
+            <div class="grade">
+                <article class="card">
+                    <span class="numero">06</span>
+                    <h3>Boas-vindas personalizadas</h3>
+                    <label for="nome-usuario">Seu nome</label>
+                    <input id="nome-usuario" type="text" placeholder="Digite seu nome">
+                    <button id="btn-saudacao">Enviar</button>
+                    <p id="resultado-saudacao" aria-live="polite"></p>
+                </article>
+
+                <article class="card">
+                    <span class="numero">07</span>
+                    <h3>Não deixe em branco</h3>
+                    <p>O campo acima também verifica se o nome foi preenchido.</p>
+                    <p id="erro-nome" class="mensagem-erro" aria-live="polite"></p>
+                </article>
+
+                <article class="card">
+                    <span class="numero">08</span>
+                    <h3>Adicionar recados</h3>
+                    <label for="texto-recado">Novo recado</label>
+                    <input id="texto-recado" type="text" placeholder="Digite um recado">
+                    <button id="btn-recado">Adicionar recado</button>
+                    <div id="lista-recados" class="lista"></div>
+                </article>
+
+                <article class="card">
+                    <span class="numero">09</span>
+                    <h3>Remover o aviso</h3>
+                    <div id="aviso-fechavel" class="aviso">
+                        Este é um aviso que pode ser fechado.
+                        <button id="btn-fechar-aviso" class="botao-secundario">Fechar</button>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <span class="numero">10</span>
+                    <h3>Modo claro e escuro</h3>
+                    <p>Altere o tema visual da página.</p>
+                    <button id="btn-tema">Ativar tema escuro</button>
+                </article>
+            </div>
+        </section>
+
+        <!-- ETAPA 03 -->
+        <section id="etapa3" class="etapa">
+            <div class="titulo-etapa">
+                <span>ETAPA 03</span>
+                <h2>Lógica que aparece na tela</h2>
+                <p>Pratique números, condições e repetições.</p>
+            </div>
+
+            <div class="grade">
+                <article class="card">
+                    <span class="numero">11</span>
+                    <h3>Contador de cliques</h3>
+                    <p id="valor-contador" class="valor">0</p>
+                    <div class="botoes">
+                        <button id="btn-subtrair">−</button>
+                        <button id="btn-somar">+</button>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <span class="numero">12</span>
+                    <h3>Verificação de idade</h3>
+                    <label for="idade">Sua idade</label>
+                    <input id="idade" type="number" min="0" step="1" placeholder="Digite sua idade">
+                    <button id="btn-idade">Verificar idade</button>
+                    <p id="resultado-idade" aria-live="polite"></p>
+                </article>
+
+                <article class="card">
+                    <span class="numero">13</span>
+                    <h3>Par ou ímpar</h3>
+                    <label for="numero-par">Número inteiro</label>
+                    <input id="numero-par" type="number" step="1" placeholder="Digite um número">
+                    <button id="btn-par">Verificar</button>
+                    <p id="resultado-par" aria-live="polite"></p>
+                </article>
+
+                <article class="card">
+                    <span class="numero">14</span>
+                    <h3>Calculadora de desconto</h3>
+                    <label for="preco">Preço (R$)</label>
+                    <input id="preco" type="number" min="0" step="0.01" placeholder="Ex.: 100">
+                    <label for="desconto">Desconto (%)</label>
+                    <input id="desconto" type="number" min="0" max="100" step="0.01" placeholder="Ex.: 10">
+                    <button id="btn-desconto">Calcular</button>
+                    <p id="resultado-desconto" aria-live="polite"></p>
+                </article>
+
+                <article class="card">
+                    <span class="numero">15</span>
+                    <h3>Cards criados em repetição</h3>
+                    <div id="cards-repeticao" class="grade-interna"></div>
+                </article>
+            </div>
+        </section>
+
+        <!-- ETAPA 04 -->
+        <section id="etapa4" class="etapa">
+            <div class="titulo-etapa">
+                <span>ETAPA 04</span>
+                <h2>Listas, buscas e organização</h2>
+                <p>Crie, pesquise, organize e remova itens.</p>
+            </div>
+
+            <article class="card">
+                <span class="numero">16–20</span>
+                <h3>Minha lista personalizada</h3>
+
+                <form id="form-lista">
+                    <label for="novo-item">Nome do item</label>
+                    <input id="novo-item" type="text" placeholder="Digite um item">
+                    <button type="submit">Adicionar item</button>
+                </form>
+
+                <p id="erro-lista" class="mensagem-erro" aria-live="polite"></p>
+
+                <div class="linha-controles">
+                    <div>
+                        <label for="busca-lista">Buscar itens</label>
+                        <input id="busca-lista" type="search" placeholder="Pesquisar...">
+                    </div>
+                    <button id="btn-ordenar" class="botao-secundario">Ordenar A–Z</button>
+                </div>
+
+                <p>Total de itens: <strong id="total-lista">0</strong></p>
+                <ul id="lista-itens" class="lista-itens"></ul>
+            </article>
+        </section>
+
+        <!-- ETAPA 05 -->
+        <section id="etapa5" class="etapa">
+            <div class="titulo-etapa">
+                <span>ETAPA 05</span>
+                <h2>Seu miniaplicativo</h2>
+                <p>Reúna objetos, filtros, favoritos e armazenamento local.</p>
+            </div>
+
+            <article class="card">
+                <span class="numero">21–24</span>
+                <h3>Catálogo NEVER LAND</h3>
+                <p>Explore os cartões e marque seus favoritos.</p>
+
+                <label for="filtro-categoria">Filtrar por categoria</label>
+                <select id="filtro-categoria">
+                    <option value="Todos">Todos</option>
+                    <option value="Programação">Programação</option>
+                    <option value="Design">Design</option>
+                    <option value="Tecnologia">Tecnologia</option>
+                </select>
+
+                <p>Favoritos: <strong id="total-favoritos">0</strong></p>
+                <div id="catalogo" class="grade"></div>
+            </article>
+
+            <article class="card">
+                <span class="numero">25</span>
+                <h3>Painel completo</h3>
+                <p>Adicione, pesquise, filtre e exclua itens. Os dados ficam salvos no navegador.</p>
+
+                <form id="form-painel">
+                    <label for="nome-painel">Nome do item</label>
+                    <input id="nome-painel" type="text" placeholder="Digite um nome">
+
+                    <label for="categoria-painel">Categoria</label>
+                    <select id="categoria-painel">
+                        <option value="Programação">Programação</option>
+                        <option value="Design">Design</option>
+                        <option value="Tecnologia">Tecnologia</option>
+                        <option value="Outros">Outros</option>
+                    </select>
+
+                    <button type="submit">Adicionar ao painel</button>
+                </form>
+
+                <p id="erro-painel" class="mensagem-erro" aria-live="polite"></p>
+
+                <label for="busca-painel">Buscar no painel</label>
+                <input id="busca-painel" type="search" placeholder="Pesquisar itens">
+
+                <label for="filtro-painel">Filtrar por categoria</label>
+                <select id="filtro-painel">
+                    <option value="Todos">Todos</option>
+                    <option value="Programação">Programação</option>
+                    <option value="Design">Design</option>
+                    <option value="Tecnologia">Tecnologia</option>
+                    <option value="Outros">Outros</option>
+                </select>
+
+                <p>Total de itens: <strong id="total-painel">0</strong></p>
+                <div id="lista-painel" class="lista"></div>
+            </article>
         </section>
     </main>
 
-    <footer>
-        <p>NEVER LAND | HTML, CSS e JavaScript</p>
+    <footer class="rodape">
+        <p>NEVER LAND · JS LAB</p>
+        <p>Projeto prático de HTML, CSS e JavaScript.</p>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>

@@ -1,226 +1,420 @@
+/* 01. CONFIGURAÇÕES GERAIS */
 
-/* CONFIGURACOES GERAIS */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     background: #f4f6fa;
-    color: #172640;
-    line-height: 1.5;
+    color: #252b36;
+    line-height: 1.6;
 }
 
-header,
-footer {
-    background: #101d35;
-    color: white;
-    text-align: center;
-    padding: 25px;
-}
-
-header h1 {
-    font-size: 30px;
-    margin-bottom: 5px;
-}
-
-main {
-    width: 90%;
-    max-width: 1000px;
-    margin: 25px auto;
-}
-
-.introducao {
-    margin-bottom: 20px;
-}
-
-.desafio,
-.biblioteca {
-    background: white;
-    border: 1px solid #dce2ec;
-    border-radius: 8px;
-    padding: 20px;
-    margin-bottom: 18px;
-}
-
-h2 {
-    color: #101d35;
-    margin-bottom: 10px;
-}
-
-h3 {
-    margin: 15px 0 10px;
-}
-
-p {
-    margin-bottom: 10px;
-}
-
+button,
 input,
-textarea {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #b9c4d5;
-    border-radius: 5px;
+select {
     font: inherit;
 }
 
-textarea {
-    min-height: 90px;
-}
-
 button {
-    background: #101d35;
-    color: white;
     border: none;
-    padding: 10px 14px;
-    margin: 4px 3px 4px 0;
-    border-radius: 5px;
+    border-radius: 6px;
+    padding: 10px 15px;
+    background: #2563eb;
+    color: white;
     cursor: pointer;
 }
 
-button:hover,
-button.ativo {
-    background: #315b91;
+button:hover {
+    background: #1d4ed8;
 }
 
-button:disabled {
-    opacity: 0.6;
-    cursor: not-allowed;
+input,
+select {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    background: white;
+    color: #252b36;
 }
 
-ul {
-    padding-left: 25px;
+label {
+    display: block;
+    font-weight: bold;
+    font-size: 14px;
 }
 
-li {
+p {
+    margin: 10px 0;
+}
+
+h3,
+h4 {
+    margin: 8px 0 12px;
+}
+
+/* 02. CABEÇALHO */
+
+.cabecalho {
+    padding: 25px 6%;
+    background: #ffffff;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.logo {
+    color: #252b36;
+    font-size: 26px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.logo span {
+    color: #2563eb;
+}
+
+.cabecalho > p {
+    color: #64748b;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    margin-top: 18px;
+}
+
+nav a {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* 03. CONTEÚDO PRINCIPAL */
+
+.container {
+    width: 90%;
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+.introducao {
+    padding: 50px 0 35px;
+}
+
+.etiqueta,
+.titulo-etapa > span {
+    color: #2563eb;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.introducao h1 {
+    margin: 8px 0;
+    font-size: 38px;
+}
+
+.titulo-etapa {
+    margin-bottom: 20px;
+}
+
+.titulo-etapa h2 {
+    margin-top: 5px;
+    font-size: 26px;
+}
+
+.titulo-etapa p {
+    color: #64748b;
+}
+
+.etapa {
+    padding: 35px 0;
+    scroll-margin-top: 20px;
+}
+
+.grade {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.card {
+    padding: 22px;
+    margin-bottom: 18px;
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+}
+
+.numero {
+    display: inline-block;
+    padding: 4px 9px;
+    border-radius: 5px;
+    background: #eaf1ff;
+    color: #2563eb;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.card h3 {
+    font-size: 18px;
+}
+
+.card p {
+    overflow-wrap: anywhere;
+}
+
+.card > button {
+    margin-top: 8px;
+}
+
+.valor {
+    font-size: 30px;
+    font-weight: bold;
+    color: #2563eb;
+}
+
+.botoes {
+    display: flex;
+    gap: 10px;
+}
+
+.botoes button {
+    min-width: 50px;
+    font-size: 20px;
+}
+
+.botao-secundario {
+    background: #e5e7eb;
+    color: #252b36;
+}
+
+.botao-secundario:hover {
+    background: #d1d5db;
+}
+
+/* 04. ELEMENTOS INTERATIVOS */
+
+.destaque {
+    padding: 10px;
+    background: #dbeafe;
+    border: 2px solid #2563eb;
+    border-radius: 6px;
+}
+
+.aviso {
+    padding: 12px;
+    background: #eff6ff;
+    border-radius: 6px;
+}
+
+.mensagem-erro {
+    color: #dc2626;
+    font-weight: bold;
+}
+
+.lista {
+    margin-top: 12px;
+}
+
+.recado,
+.item-painel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+    padding: 12px;
+    background: #f8fafc;
+    border: 1px solid #e5e7eb;
+    border-radius: 6px;
+}
+
+.recado button,
+.item-painel button {
+    flex-shrink: 0;
+}
+
+.linha-controles {
+    display: flex;
+    align-items: end;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.linha-controles > div {
+    flex: 1;
+}
+
+.lista-itens {
+    list-style: none;
+    margin-top: 15px;
+}
+
+.lista-itens li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 12px;
+    margin-bottom: 8px;
+    background: #f8fafc;
+    border: 1px solid #e5e7eb;
+    border-radius: 6px;
+}
+
+.lista-itens li span {
+    overflow-wrap: anywhere;
+}
+
+.grade-interna {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.card-repeticao {
+    padding: 15px;
+    text-align: center;
+    background: #eff6ff;
+    border-radius: 6px;
+    color: #1d4ed8;
+}
+
+.card-catalogo {
+    padding: 15px;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    background: #f8fafc;
+}
+
+.card-catalogo h4 {
     margin: 8px 0;
 }
 
-li input {
-    display: inline-block;
-    width: auto;
-    margin-right: 8px;
+.card-catalogo button {
+    margin-top: 10px;
 }
 
-li button {
-    margin-left: 10px;
+.favorito-ativo {
+    background: #fef3c7;
+    color: #92400e;
 }
 
-.concluida span {
-    text-decoration: line-through;
-    color: #68758a;
-}
-
-.destaque-desafio {
-    background: #edf2fa;
-    padding: 12px;
-    border-radius: 5px;
-}
-
-.tema-alternativo {
-    background: #101d35;
-    color: white;
-}
-
-#painel-cor {
-    background: #eaf1ff;
-    color: #071426;
-    padding: 20px;
-    border-radius: 5px;
-}
-
-.filtros {
-    margin: 10px 0;
-}
-
-.grade-jogos {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 15px;
-    margin: 20px 0;
-}
-
-.jogo {
-    border: 1px solid #dce2ec;
-    border-radius: 8px;
-    overflow: hidden;
-}
-
-.jogo-arte {
-    background: #101d35;
-    color: white;
-    padding: 20px;
-    min-height: 90px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 8px;
-}
-
-.jogo-icone {
-    font-size: 25px;
-}
-
-.jogo-tag {
-    font-size: 10px;
-}
-
-.jogo-coracao {
-    padding: 6px 10px;
-}
-
-.jogo-coracao.favorito {
-    background: #315b91;
-}
-
-.jogo-info {
-    padding: 12px;
-}
-
-.jogo-meta {
-    display: flex;
-    flex-direction: column;
-    color: #58677d;
-    font-size: 13px;
-    margin: 10px 0;
-}
-
-.sem-resultados,
-.colecao-vazia {
-    padding: 12px;
-    color: #58677d;
-}
-
-.colecao-item {
-    background: #edf2fa;
-    padding: 10px;
-    margin-top: 8px;
-    border-radius: 5px;
-}
-
-.colecao-item span {
-    margin-right: 10px;
-}
-
-footer {
+.rodape {
     margin-top: 30px;
+    padding: 25px;
+    text-align: center;
+    background: #ffffff;
+    border-top: 1px solid #e5e7eb;
+    color: #64748b;
 }
 
-@media (max-width: 650px) {
-    main {
-        width: 94%;
+/* 05. TEMA ESCURO */
+
+body.tema-escuro {
+    background: #111827;
+    color: #f3f4f6;
+}
+
+.tema-escuro .cabecalho,
+.tema-escuro .card,
+.tema-escuro .rodape {
+    background: #1f2937;
+    border-color: #374151;
+}
+
+.tema-escuro .logo {
+    color: #f3f4f6;
+}
+
+.tema-escuro .titulo-etapa p,
+.tema-escuro .cabecalho > p {
+    color: #cbd5e1;
+}
+
+.tema-escuro input,
+.tema-escuro select {
+    background: #111827;
+    color: #f3f4f6;
+    border-color: #4b5563;
+}
+
+.tema-escuro .recado,
+.tema-escuro .item-painel,
+.tema-escuro .lista-itens li,
+.tema-escuro .card-catalogo {
+    background: #111827;
+    border-color: #374151;
+    color: #f3f4f6;
+}
+
+.tema-escuro .card-repeticao {
+    background: #172554;
+    color: #bfdbfe;
+}
+
+.tema-escuro .aviso {
+    background: #172554;
+    color: #f3f4f6;
+}
+
+.tema-escuro .botao-secundario {
+    background: #374151;
+    color: #f3f4f6;
+}
+
+/* 06. RESPONSIVIDADE */
+
+@media (max-width: 700px) {
+    .container {
+        width: 92%;
     }
 
-    .grade-jogos {
+    .grade {
         grid-template-columns: 1fr;
     }
 
-    header h1 {
-        font-size: 25px;
+    .introducao h1 {
+        font-size: 30px;
+    }
+
+    .titulo-etapa h2 {
+        font-size: 23px;
+    }
+
+    .linha-controles {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .linha-controles button {
+        width: 100%;
+    }
+
+    .cabecalho {
+        padding: 20px 4%;
+    }
+
+    nav {
+        gap: 12px;
+    }
+
+    .card {
+        padding: 17px;
     }
 }
